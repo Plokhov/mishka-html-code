@@ -39,7 +39,250 @@
       </header>
 
       <main class="page-main">
-        <h1 class="page-main__header">Вязание на заказ</h1>
+        <h1 class="page-main__title">Вязание на заказ</h1>
+
+        <form
+          class="form-order"
+          action="https://echo.htmlacademy.ru"
+          method="post"
+        >
+          <p class="form-order__text">
+            Мы будем рады воплотить в жизнь ваши пожелания!
+            Заполните простую форму заказа и мы свяжемся с вами,
+            чтобы уточнить детали.
+          </p>
+
+          <fieldset class="form-order__type type-order">
+            <legend class="type-order__title">
+              Тип
+            </legend>
+            <input
+              class="type-order__input"
+              type="radio"
+              name="type-order"
+              id="type-accessories"
+              value="accessories"
+              checked
+            >
+            <label
+              class="type-order__label"
+              for="type-accessories"
+            >
+              Аксессуар для интерьера
+            </label>
+            <input
+              class="type-order__input"
+              type="radio"
+              name="type-order"
+              id="type-toys"
+              value="toys"
+            >
+            <label
+              class="type-order__label"
+              for="type-toys"
+            >
+              Детская игрушка
+            </label>
+          </fieldset>
+
+          <fieldset class="form-order__color color-order">
+            <legend class="color-order__title">Цвет</legend>
+            <ul class="color-order__list">
+              <li class="color-order__item">
+                <input
+                  class="color-order__checbox"
+                  type="checkbox"
+                  name="white"
+                  id="color-white"
+                  checked
+                >
+                <label
+                  class="color-order__label"
+                  for="color-white"
+                >
+                  Белый
+                </label>
+              </li>
+              <li class="color-order__item">
+                <input
+                  class="color-order__checbox"
+                  type="checkbox"
+                  name="grey"
+                  id="color-grey"
+                  checked
+                >
+                <label
+                  class="color-order__label"
+                  for="color-grey"
+                >
+                  Серый
+                </label>
+              </li>
+              <li class="color-order__item">
+                <input
+                  class="color-order__checbox"
+                  type="checkbox"
+                  name="tiffany"
+                  id="color-tiffany"
+                >
+                <label
+                  class="color-order__label"
+                  for="color-tiffany"
+                >
+                  &laquo;Тиффани&raquo;
+                </label>
+              </li>
+              <li class="color-order__item">
+                <input
+                  class="color-order__checbox"
+                  type="checkbox"
+                  name="black"
+                  id="color-black"
+                >
+                <label
+                  class="color-order__label"
+                  for="color-black"
+                >
+                  Черный
+                </label>
+              </li>
+              <li class="color-order__item">
+                <input
+                  class="color-order__checbox"
+                  type="checkbox"
+                  name="pink"
+                  id="color-pink"
+                >
+                <label
+                  class="color-order__label"
+                  for="color-pink"
+                >
+                  Розовый
+                </label>
+              </li>
+              <li class="color-order__item">
+                <input
+                  class="color-order__checbox"
+                  type="checkbox"
+                  name="orange"
+                  id="color-orange"
+                >
+                <label
+                 class="color-order__label"
+                 for="color-orange"
+                >
+                  Оранжевый
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form-order__fio fio-customer">
+            <legend class="fio-customer__title">
+              ФИО
+            </legend>
+            <label
+              class="fio-customer__label"
+              for="costumer-name"
+            >
+              Имя:
+            </label>
+            <input
+              class="fio-customer__input"
+              type="text"
+              name="costumer-name"
+              id="costumer-name"
+              placeholder="Введите выше имя*"
+              required
+            >
+
+            <label
+              class="fio-customer__label"
+              for="costumer-surname"
+            >
+              Фамилия:
+            </label>
+            <input
+              class="fio-customer__input"
+              type="text"
+              name="costumer-surname"
+              id="costumer-surname"
+              placeholder="Укажите фамилию*"
+              required
+            >
+
+            <label
+              class="fio-customer__label"
+              for="costumer-patronymic"
+            >
+              Отчество:
+            </label>
+            <input
+              class="fio-customer__input"
+              type="text"
+              name="costumer-patronymic"
+              id="costumer-Patronymic"
+              placeholder="Отчество, если желаете"
+            >
+          </fieldset>
+
+          <fieldset class="form-order__contacts contacts-customer">
+
+            <label
+              class="contacts-customer__label"
+              for="customer-tel"
+            >
+              Тел
+            </label>
+            <input
+              class="contacts-customer__input"
+              type="tel"
+              name="customer-tel"
+              id="customer-tel"
+              placeholder="+7 XXX XXX XX XX*"
+              required
+            >
+
+            <label
+              class="contacts-customer__label"
+              for="customer-email"
+            >
+              E-mail
+            </label>
+            <input
+              class="contacts-customer__input"
+              type="email"
+              name="customer-email"
+              id="customer-email"
+              placeholder="Ваш Email*"
+              required
+            >
+          </fieldset>
+
+          <fieldset class="form-order__additionally additionally-order">
+            <legend class="additionally-order__title">
+              Доп
+            </legend>
+            <textarea
+              class="additionally-order__field"
+              name="additionally"
+            >
+              Опишите все ваши пожелания к заказу
+            </textarea>
+          </fieldset>
+
+          <button
+            class="form-order__button"
+            type="submit"
+          >
+            Отправить заказ
+          </button>
+
+          <p class="form-order__must-input-text">
+            *Поля обязательны для заполнения
+          </p>
+
+        </form>
 
       </main>
 
