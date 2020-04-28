@@ -1,5 +1,60 @@
 @import "colors.less";
 @import "mixins.less";
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+  font-family: "Open Sans", "Arial", sans-serif;
+}
+
+.button {
+  .reset();
+  box-sizing: content-box;
+  display: inline-block;
+  width: 256px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: @darkGrey;
+  background-color: @white;
+  border: 2px solid @darkGrey;
+
+  &:hover {
+    color: @white;
+    background-color: @darkGrey;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
 @import "page-header.less";
 @import "main-nav.less";
 @import "site-list.less";
@@ -9,49 +64,10 @@
 @import "promo.less";
 @import "characteristics.less";
 @import "features.less";
+@import "reviews.less";
+@import "contacts.less";
+@import "production.less";
+@import "form-order.less";
 @import "page-footer.less";
 @import "social.less";
 @import "copyright.less";
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-body {
-  width: 322px;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
-.button {
-  .reset();
-  box-sizing: content-box;
-  display: inline-block;
-  width: 256px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: @darkGrey;
-  background-color: @white;
-  border: 2px solid @darkGrey;
-}
-
-.button:hover {
-  color: @white;
-  background-color: @darkGrey;
-}
-
-.button:focus,
-.button:active {
-  color: rgba(255, 255, 255, 0.3);
-}

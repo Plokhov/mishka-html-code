@@ -1,0 +1,150 @@
+.form-order {
+  padding-top: 23px;
+  padding-bottom: 56px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form-order__text {
+  .reset();
+  margin-bottom: 25px;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 24px;
+  color: @darkGrey;
+}
+
+.form-order__text--required {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-order__group {
+  .reset();
+  margin-bottom: 34px;
+}
+
+.form-order__group-title {
+  .reset();
+  display: block;
+  width: 260px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @turquoise;
+}
+
+.form-order__group-title--radio {
+  margin-bottom: 27px;
+}
+
+.form-order__radio-label {
+  position: relative;
+  display: block;
+  min-height: 29px;
+  padding-left: 62px;
+  padding-top: 11px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  // &:before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   width: 34px;
+  //   height: 34px;
+  //   border: 3px solid @darkGrey;
+  //   border-radius: 50%;
+  // }
+}
+
+.form-order__group-title--checkbox {
+  margin-bottom: 23px;
+}
+
+.form-order__checkbox-list {
+  .reset();
+}
+
+.form-order__checkbox-item {
+  min-height: 39px;
+  margin-bottom: 22px;
+  padding-top: 13px;
+  padding-left: 62px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-order__checkbox-label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.form-order__group--fio {
+  display: flex;
+}
+
+.form-order__group-title--fio {
+  margin-bottom: 33px;
+}
+
+.form-order__input-label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+.form-order__input {
+  .reset();
+  width: 260px;
+  height: 50px;
+  margin-bottom: 24px;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  border-bottom: 2px solid @black;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.form-order__group-title--phone,
+.form-order__group-title--email {
+  margin-bottom: 9px;
+}
+
+.form-order__group--addition {
+  margin-bottom: 18px;
+}
+
+.form-order__group-title--addition {
+  margin-bottom: 23px;
+}
+
+.form-order__textarea {
+  .reset();
+  display: block;
+  width: 222px;
+  min-height: 106px;
+  padding: 16px;
+  border: 2px solid @darkGrey;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+}
