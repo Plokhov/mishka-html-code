@@ -2,7 +2,6 @@
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
-  border: 1px solid black;
 }
 
 .catalog__list {
@@ -31,15 +30,15 @@
   line-break: 24px;
   text-decoration: none;
   color: @black;
-}
 
-.catalog__name:hover {
-  color: rgba(0, 0, 0, 0.6);
-}
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
 
-.catalog__name:focus,
-.catalog__name:active {
-  color: rgba(0, 0, 0, 0.3);
+  &:focus,
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .catalog__characteristic {

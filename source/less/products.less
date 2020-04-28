@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: flex-end;
   min-height: 490px;
-  border: 1px solid black;
   background: url("../img/hero-mobile@1x.jpg") center top no-repeat;
 }
 
@@ -15,19 +14,19 @@
   display: block;
   min-height: 103px;
   background-color: @turquoise;
-}
 
-.products__item:nth-child(2) {
-  background-color: @darkTurquoise;
-}
+  &:hover {
+    min-height: 108px;
+    background-color: #59d5bc;
+  }
 
-.products__item:hover {
-  min-height: 108px;
-  background-color: #59d5bc;
-}
+  &:nth-child(2) {
+    background-color: @darkTurquoise;
+  }
 
-.products__item:nth-child(2):hover {
-  background-color: #46c1ae;
+  &:nth-child(2):hover {
+    background-color: #46c1ae;
+  }
 }
 
 .products__link {
@@ -39,9 +38,9 @@
   line-height: 24px;
   text-decoration: none;
   color: @white;
-}
 
-.products__link:focus,
-.products__link:active {
-  color: rgba(255, 255, 255, 0.3);
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
