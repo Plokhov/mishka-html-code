@@ -16,3 +16,23 @@
   min-height: 80px;
   border-top: 1px solid @colorGreyDecorLine;
 }
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 86px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 57px;
+  }
+
+  .page-footer__logo {
+    display: block;
+  }
+
+  .page-footer__copyright {
+    border-top: none;
+  }
+}
