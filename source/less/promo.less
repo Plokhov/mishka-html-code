@@ -34,19 +34,137 @@
 }
 
 .promo__characteristics {
-  margin-bottom: 30px;
-}
-
-.promo__image {
-  display: block;
+  margin-bottom: 368px;
 }
 
 .promo__price {
   .reset();
-  margin-top: 25px;
   margin-bottom: 25px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
   text-align: center;
+}
+
+.promo__image {
+  display: block;
+  margin-top: -441px;
+  margin-bottom: 126px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 68px;
+  }
+
+  .promo__wrapper-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .promo__title {
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .promo__status {
+    width: 70px;
+    padding-right: 28px;
+    margin-bottom: 3px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .promo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 57px;
+  }
+
+  .promo__wrapper-description {
+    width: 292px;
+  }
+
+  .promo__description {
+    margin-top: -7px;
+    margin-bottom: 35px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__characteristics {
+    margin-bottom: 58px;
+  }
+
+  .promo__price {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .promo__button {
+    width: 288px;
+  }
+
+  .promo__image {
+    min-width: 333px;
+    height: 404px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    padding-top: 74px;
+    padding-bottom: 96px;
+  }
+
+  .promo__wrapper-title {
+    justify-content: start;
+    padding-top: 61px;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    z-index: 1;
+  }
+
+  .promo__status {
+    order: -1;
+    width: 70px;
+    padding-left: 47px;
+    padding-right: 58px;
+    margin: 0;
+  }
+
+  .promo__wrapper {
+    margin-top: -117px;
+    padding-top: 0;
+  }
+
+  .promo__wrapper-description {
+    padding-top: 158px;
+    padding-left: 175px;
+  }
+
+  .promo__description {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+
+  .promo__characteristics {
+    margin-bottom: 110px;
+  }
+
+  .promo__image {
+    min-width: 525px;
+    height: 636px;
+  }
 }

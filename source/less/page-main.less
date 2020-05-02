@@ -1,5 +1,6 @@
 .page-main__title {
   .reset();
+  margin-top: 75px;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -12,4 +13,32 @@
   padding-top: 74px;
   padding-bottom: 74px;
   background-color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main {
+    margin-top: -89px;
+  }
+
+  .page-main__title {
+    margin-top: 160px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .page-main__title--catalog {
+    margin-top: 0;
+    padding-top: 102px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .page-main__title--catalog {
+    padding-bottom: 94px;
+  }
 }

@@ -2,11 +2,11 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="container">
 
     <header class="page-header">
       <a class="page-header__logo">
@@ -21,106 +21,157 @@
           Открыть меню
         </button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="./catalog.html">Каталог товаров</a>
+          <li class="site-list__item site-list__item--catalog">
+            <a
+              class="site-list__link site-list__link--catalog"
+              href="./catalog.html"
+            >
+              Каталог товаров
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Вязание на заказ</a>
+          <li class="site-list__item site-list__item--order">
+            <a
+              class="site-list__link site-list__link--order"
+              href=#
+            >
+              Вязание на заказ
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Новые поступления</a>
+          <li class="site-list__item site-list__item--new">
+            <a
+              class="site-list__link site-list__link--new"
+              href=#
+            >
+              Новые поступления
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Распродажа</a>
+          <li class="site-list__item site-list__item--sale">
+            <a
+              class="site-list__link site-list__link--sale"
+              href=#
+            >
+              Распродажа
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Поиск по сайту</a>
+          <li class="site-list__item site-list__item--search">
+            <a
+              class="site-list__link"
+              href=#
+            >
+              Поиск по сайту
+            </a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Корзина: пока пуста</a>
+          <li class="site-list__item site-list__item--basket">
+            <a
+              class="site-list__link"
+              href=#
+            >
+              Корзина: пока пуста
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--delivery">
+            <a
+              class="site-list__link site-list__link--delivery"
+              href=#
+            >
+              Бесплатная доставка по России
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="page-main__title">Милые штучки ручной<br> работы для дома</h1>
+      <h1 class="page-main__title">
+        Милые штучки ручной<br> работы для дома
+      </h1>
 
       <section class="products">
         <h2 class="products__title visually-hidden">Наши прродукты</h2>
         <ul class="products__list">
           <li class="products__item">
-            <!-- Временно для каталога ссылка -->
-            <a class="products__link" href="./catalog.html">Предметы интерьера</a>
+            <a class="products__link" href="#">Предметы интерьера</a>
           </li>
           <li class="products__item">
             <a class="products__link" href="#">Детские игрушки</a>
           </li>
         </ul>
-        <p class="products__delivery visually-hidden">Бесплатная доставка по России</p>
       </section>
 
       <section class="promo">
-        <h2 class="promo__title">Вязаные корзинки</h2>
+        <div class="promo__wrapper-title">
+          <h2 class="promo__title">Вязаные корзинки</h2>
+          <p class="promo__status">Товар недели</p>
+        </div>
 
-        <p class="promo__status">Товар недели</p>
-        <p class="promo__description">
-          Экологически чистая пряжа, ручная работа.
-          Доступны в шести расцветках, и трех размерах.
-        </p>
+        <div class="promo__wrapper">
+          <div class="promo__wrapper-description">
+            <p class="promo__description">
+              Экологически чистая пряжа, ручная работа.
+              Доступны в шести расцветках, и трех размерах.
+            </p>
 
-        <table class="promo__characteristics characteristics">
-          <tr>
-            <th class="characteristics__name">Цвет:</th>
-            <td class="characteristics__value">&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr>
-            <th class="characteristics__name">Диаметр:</th>
-            <td class="characteristics__value">25 см</td>
-          </tr>
-          <tr>
-            <th class="characteristics__name">Высота:</th>
-            <td class="characteristics__value">15 см</td>
-          </tr>
-        </table>
+            <table class="promo__characteristics characteristics">
+              <tr>
+                <th class="characteristics__name">Цвет:</th>
+                <td class="characteristics__value">&laquo;Тиффани&raquo;/серый</td>
+              </tr>
+              <tr>
+                <th class="characteristics__name">Диаметр:</th>
+                <td class="characteristics__value">25 см</td>
+              </tr>
+              <tr>
+                <th class="characteristics__name">Высота:</th>
+                <td class="characteristics__value">15 см</td>
+              </tr>
+            </table>
 
-        <img
-          class="promo__image"
-          src="./img/triple-set-mobile@1x.jpg"
-          width="260"
-          height="315"
-          alt="Вязанные корзинки"
-        >
+            <p class="promo__price">Цена: 990 руб.</p>
 
-        <p class="promo__price">Цена: 990 руб.</p>
+            <button class="promo__button button" type="button">
+              Заказать
+            </button>
+          </div>
 
-        <button class="promo__button button" type="button">Заказать</button>
+
+          <img
+            class="promo__image"
+            src="./img/triple-set-mobile@1x.jpg"
+            width="260"
+            height="315"
+            alt="Вязанные корзинки"
+          >
+        </div>
       </section>
 
       <section class="features">
         <h2 class="features__title">
           Коротко о нас:
         </h2>
-        <ul class="features__list">
-          <li class="features__item">
-            Экологически<br> чистые материалы
-          </li>
-          <li class="features__item">
-            Скандинавский стиль<br> по российской цене
-          </li>
-          <li class="features__item">
-            Увеличивает лайки<br> на фотографиях
-          </li>
-          <li class="features__item">
-            Связано вручную с<br> любовью и умилением
-          </li>
-          <li class="features__item">
-            Поддержка отечественного производителя
-          </li>
-          <li class="features__item">
-            Поставляется в<br> подарочной упаковке
-          </li>
-        </ul>
+        <div class="features__list-wrapper">
+          <ul class="features__list">
+            <li class="features__item">
+              Экологически<br> чистые материалы
+            </li>
+            <li class="features__item">
+              Скандинавский стиль<br> по российской цене
+            </li>
+            <li class="features__item">
+              Увеличивает лайки<br> на фотографиях
+            </li>
+          </ul>
+          <ul class="features__list">
+            <li class="features__item">
+              Связано вручную с<br> любовью и умилением
+            </li>
+            <li class="features__item">
+              Поддержка отечественного производителя
+            </li>
+            <li class="features__item">
+              Поставляется в<br> подарочной упаковке
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="reviews">
@@ -200,7 +251,9 @@
     <footer class="page-footer">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image"
-          src="https://via.placeholder.com/150x150"
+          src="./img/logo-footer.svg"
+          width="102"
+          height="34"
           alt="Магазин игрушек «Мишка»">
       </a>
 
