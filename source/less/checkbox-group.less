@@ -1,0 +1,82 @@
+.checkbox-group__title {
+  .reset();
+  display: block;
+  width: 260px;
+  margin-bottom: 23px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @turquoise;
+}
+
+.checkbox-group__list {
+  .reset();
+}
+
+.checkbox-group__item {
+  min-height: 26px;
+  margin-bottom: 22px;
+  padding-top: 13px;
+  padding-left: 62px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.checkbox-group__label {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox-group {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .checkbox-group__title {
+    padding-top: 19px;
+    width: 167px;
+  }
+
+  .checkbox-group__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 501px;
+  }
+
+  .checkbox-group__item {
+    width: 159px;
+    min-height: 35px;
+    padding-top: 17px;
+    padding-left: 80px;
+    margin-bottom: 24px;
+    margin-right: 22px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .checkbox-group__label {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox-group__title {
+    width: 113px;
+    padding-left: 62px;
+  }
+
+  .checkbox-group__item {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}

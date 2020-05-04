@@ -1,27 +1,30 @@
 .production {
+  width: 258px;
+  margin: 0 auto;
   margin-bottom: 58px;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.production__wrapper {
-  padding-top: 20px;
+  padding-top: 25px;
   padding-bottom: 32px;
   border: 1px solid @grey;
 }
 
+.production__video {
+  display: block;
+  margin-top: 75px;
+}
+
+.production__wrapper {
+  margin-top: -226px;
+  padding-left: 33px;
+  padding-right: 33px;
+}
+
 .production__title {
   .reset();
-  margin-bottom: 20px;
-  padding-left: 90px;
+  margin-bottom: 200px;
+  padding-left: 57px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
-}
-
-.production__video {
-  display: block;
-  margin-bottom: 30px;
 }
 
 .production__button-play {
@@ -31,8 +34,6 @@
 .production__text {
   .reset();
   margin-bottom: 25px;
-  padding-left: 33px;
-  padding-right: 33px;
   font-size: 13px;
   font-weight: normal;
   line-height: 24px;
@@ -40,6 +41,73 @@
 }
 
 .production__button-order {
-  margin-left: 33px;
   width: 188px;
+}
+
+@media (min-width: @tablet-width) {
+  .production {
+    width: 666px;
+    padding: 0;
+    margin-bottom: 63px;
+  }
+
+  .production__video {
+    width: 666px;
+    // исправить высоту на 455
+    height: 454px;
+    margin: 0;
+    border-bottom: 1px solid black;
+  }
+
+  .production__wrapper {
+    margin: 0;
+    padding: 40px;
+    padding-bottom: 45px;
+  }
+
+  .production__title {
+    margin-bottom: 32px;
+    font-size: 20px;
+  }
+
+  .production__text {
+    margin-bottom: 33px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .production__button-order {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .production {
+    display: flex;
+    width: 1048px;
+  }
+
+  .production__video {
+    // исправить ширину на 682
+    width: 681px;
+    border: none;
+  }
+
+  .production__wrapper {
+    width: 230px;
+    padding-top: 46px;
+    padding-left: 80px;
+    padding-right: 57px;
+    padding-bottom: 59px;
+  }
+
+  .production__title {
+    padding-left: 0;
+    padding-top: 51px;
+  }
+
+  .production__text {
+    margin-bottom: 45px;
+  }
 }
