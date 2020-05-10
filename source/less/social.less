@@ -1,3 +1,31 @@
 .social {
   .reset();
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 40px;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  display: flex;
+}
+
+.social__link:hover .social__link-icon {
+  path {
+    fill: rgba(70, 193, 174);
+  }
+}
+
+.social__link:focus .social__link-icon,
+.social__link:active .social__link-icon {
+  path {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }

@@ -1,103 +1,9 @@
 @import "variables.less";
 @import "mixins.less";
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensans.woff") format("woff"),
-    url("../fonts/opensans.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    url("../fonts/opensansbold.woff") format("woff"),
-    url("../fonts/opensansbold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-body {
-  min-width: 320px;
-  margin: 0 auto;
-  font-family: "Open Sans", "Arial", sans-serif;
-  background-color: @white;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 320px;
-}
-
-@media (min-width: @tablet-width) {
-  .container {
-    width: 768px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .container {
-    width: 1150px;
-  }
-}
-
-
-.button {
-  .reset();
-  box-sizing: content-box;
-  display: inline-block;
-  width: 256px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: 17px;
-  font-weight: bold;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: @darkGrey;
-  background-color: @white;
-  border: 2px solid @darkGrey;
-
-  &:hover {
-    color: @white;
-    background-color: @darkGrey;
-  }
-
-  &:focus,
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}
-
+@import "scaffolding.less";
 @import "page-header.less";
-@import "main-nav.less";
 @import "site-list.less";
+@import "main-nav.less";
 @import "page-main.less";
 @import "catalog.less";
 @import "products.less";
@@ -113,6 +19,6 @@ img {
 @import "input-group.less";
 @import "form-contacts.less";
 @import "textarea-group.less";
-@import "page-footer.less";
 @import "social.less";
 @import "copyright.less";
+@import "page-footer.less";
