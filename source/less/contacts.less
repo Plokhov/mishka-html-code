@@ -1,6 +1,11 @@
 .contacts {
+  position: relative;
   padding-top: 38px;
   padding-bottom: 39px;
+}
+
+.contacts__icon {
+  display: none;
 }
 
 .contacts__title {
@@ -45,7 +50,19 @@
 }
 
 .contacts__email-value {
+  text-decoration: none;
   border-bottom: 1px solid @turquoise;
+}
+
+.contacts__email-value:hover {
+  color: rgba(70, 193, 174);
+  border-color: rgba(70, 193, 174);
+}
+
+.contacts__email-value:focus,
+.contacts__email-value:active {
+  color: rgba(70, 193, 174, 0.3);
+  border-color: rgba(70, 193, 174, 0.1);
 }
 
 .contacts__map-link {
@@ -68,6 +85,15 @@
     flex-direction: column;
     padding-top: 68px;
     padding-bottom: 57px;
+  }
+
+  .contacts__icon {
+    display: block;
+    position: absolute;
+    top: 47px;
+    right: 53px;
+    width: 47px;
+    height: 81px;
   }
 
   .contacts__title {
@@ -119,6 +145,11 @@
     padding-left: 225px;
     padding-right: 50px;
     padding-bottom: 105px;
+  }
+
+  .contacts__icon {
+    top: 133px;
+    left: 113px;
   }
 
   .contacts__title {
