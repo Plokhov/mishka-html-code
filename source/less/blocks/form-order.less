@@ -7,6 +7,10 @@
 
 .form-order__text {
   .reset();
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
   margin-bottom: 25px;
   font-size: 13px;
   font-weight: normal;
@@ -15,13 +19,13 @@
 }
 
 .form-order__text--required {
+  .reset();
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
 }
 
 .form-order__group {
-  .reset();
   margin-bottom: 34px;
 }
 
@@ -57,8 +61,9 @@
   }
 
   .form-order__text {
+    width: 668px;
     padding-left: 50px;
-    padding-right: 100px;
+    padding-right: 50px;
     margin-bottom: 5px;
     font-size: 17px;
     line-height: 30px;
@@ -75,8 +80,7 @@
     margin-bottom: 0;
   }
 
-  .form-order__group--color,
-  .form-order__group--contacts {
+  .form-order__background {
     background-color: @grey;
   }
 
@@ -97,11 +101,13 @@
 
   .form-order__text--required {
     order: 1;
+    width: 334px;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
+    text-align: end;
   }
 
   .form-order__button {
@@ -115,6 +121,7 @@
   }
 
   .form-order__text {
+    width: 700px;
     padding-left: 225px;
     padding-right: 225px;
   }
@@ -124,6 +131,7 @@
   }
 
   .form-order__wrapper-bottom {
+    width: 700px;
     padding-left: 225px;
     padding-right: 225px;
   }

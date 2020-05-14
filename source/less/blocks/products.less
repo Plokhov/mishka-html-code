@@ -1,10 +1,16 @@
 .products {
+  background-color: rgba(249, 249, 249);
+}
+
+.products__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  width: 320px;
   min-height: 490px;
+  margin: 0 auto;
   margin-top: -165px;
-  background: url("../img/hero-mobile@1x.jpg") center -18px no-repeat;
+  background: url("../img/hero-mobile@1x.jpg") center top no-repeat;
 }
 
 .products__list {
@@ -96,20 +102,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .products {
+  .products__container {
     position: relative;
+    width: 668px;
     min-height: 745px;
     margin-top: -260px;
-    padding-left: 50px;
-    padding-right: 50px;
     background: url("../img/hero-tablet@1x.jpg") center top no-repeat;
 
     &::after {
       content: "";
       position: absolute;
-      left: 0;
+      left: -50px;
       bottom: -10px;
-      width: 100%;
+      width: 800px;
       height: 24px;
       background: url("../img/bg-zigzag-fill.svg") repeat;
     }
@@ -139,9 +144,14 @@
 }
 
 @media (min-width: @desktop-width) {
-  .products {
+  .products__container {
+    width: 1050px;
     margin-top: -276px;
     background: url("../img/hero-desktop@1x.jpg") center top no-repeat;
+
+    &::after {
+      width: 1150px;
+    }
   }
 
   .products__link {
