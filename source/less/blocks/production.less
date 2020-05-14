@@ -1,4 +1,5 @@
 .production {
+  position: relative;
   width: 258px;
   margin: 0 auto;
   margin-bottom: 58px;
@@ -7,19 +8,71 @@
   border: 1px solid @grey;
 }
 
+.production__wrapper--video {
+  position: relative;
+}
+
 .production__video {
   display: block;
   margin-top: 75px;
 }
 
-.production__wrapper {
+.production__button-play {
+  .reset();
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -38px;
+  margin-left: -50px;
+  background-color: transparent;
+  outline: none;
+}
+
+.production__icon-play {
+  width: 101px;
+  height: 77px;
+}
+
+.production__button-play:hover {
+  margin-top: -45px;
+  margin-left: -60px;
+}
+
+.production__button-play:hover .production__icon-play {
+  width: 121px;
+  height: 91px;
+}
+
+.production__button-play:focus,
+.production__button-play:active {
+  margin-top: -31px;
+  margin-left: -40px;
+}
+
+.production__button-play:focus .production__icon-play,
+.production__button-play:active .production__icon-play {
+  width: 81px;
+  height: 62px;
+  opacity: 0.3;
+}
+
+.production__wrapper--text {
   margin-top: -226px;
   padding-left: 33px;
   padding-right: 33px;
 }
 
+.production:hover .production__wrapper--text {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.production:active .production__wrapper--text {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
 .production__title {
   .reset();
+  position: relative;
   margin-bottom: 200px;
   padding-left: 57px;
   font-size: 17px;
@@ -27,8 +80,16 @@
   line-height: 24px;
 }
 
-.production__button-play {
-  display: none;
+.production__title-icon {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  width: 32px;
+  height: 22px;
+
+  path {
+    fill: @turquoise;
+  }
 }
 
 .production__text {
@@ -59,7 +120,7 @@
     border-bottom: 1px solid black;
   }
 
-  .production__wrapper {
+  .production__wrapper--text {
     margin: 0;
     padding: 40px;
     padding-bottom: 45px;
@@ -68,6 +129,10 @@
   .production__title {
     margin-bottom: 32px;
     font-size: 20px;
+  }
+
+  .production__title-icon {
+    top: 0;
   }
 
   .production__text {
@@ -94,7 +159,7 @@
     border: none;
   }
 
-  .production__wrapper {
+  .production__wrapper--text {
     width: 230px;
     padding-top: 46px;
     padding-left: 80px;

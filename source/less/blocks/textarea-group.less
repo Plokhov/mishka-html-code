@@ -17,13 +17,24 @@
   min-height: 106px;
   padding: 15px;
   border: 2px solid @darkGrey;
+  outline: none;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: normal;
   line-height: 18px;
   text-indent: 0;
-  color: rgba(68, 68, 68, 0.3);
+  color: @darkGrey;
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: @turquoise;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,6 +58,7 @@
 
 @media (min-width: @desktop-width) {
   .textarea-group {
+    width: 875px;
     padding-right: 225px;
   }
 

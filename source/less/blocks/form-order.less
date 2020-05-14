@@ -1,12 +1,16 @@
 .form-order {
   padding-top: 23px;
-  padding-bottom: 56px;
+  padding-bottom: 55px;
   padding-left: 30px;
   padding-right: 30px;
 }
 
 .form-order__text {
   .reset();
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
   margin-bottom: 25px;
   font-size: 13px;
   font-weight: normal;
@@ -15,14 +19,34 @@
 }
 
 .form-order__text--required {
+  .reset();
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
 }
 
 .form-order__group {
-  .reset();
   margin-bottom: 34px;
+}
+
+.form-order__group-title {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 198px;
+    height: 1px;
+    background-color: @turquoise;
+  }
+}
+
+.form-order__group-title--email {
+  &::before {
+    width: 179px;
+  }
 }
 
 .form-order__group--addition {
@@ -37,44 +61,35 @@
   }
 
   .form-order__text {
+    width: 668px;
     padding-left: 50px;
-    padding-right: 100px;
-    margin-bottom: 55px;
+    padding-right: 50px;
+    margin-bottom: 5px;
     font-size: 17px;
     line-height: 30px;
   }
 
-  .form-order__group--type {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 50px;
+  .form-order__group-title {
+    &::before {
+      width: 0;
+    }
   }
 
-  .form-order__group--color {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 67px;
-    background-color: @grey;
-  }
-
-  .form-order__group--fio {
-    padding-left: 50px;
-    padding-right: 50px;
+  .form-order__group {
+    padding: 50px;
     margin-bottom: 0;
   }
 
-  .form-order__group--contacts {
-    padding-top: 123px;
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 100px;
+  .form-order__background {
     background-color: @grey;
   }
 
+  .form-order__group--color {
+    padding-bottom: 26px;
+  }
+
   .form-order__group--addition {
-    padding-left: 50px;
-    padding-right: 50px;
-    margin-bottom: 53px;
+    padding-bottom: 53px;
   }
 
   .form-order__wrapper-bottom {
@@ -86,11 +101,13 @@
 
   .form-order__text--required {
     order: 1;
+    width: 334px;
     padding: 0;
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 17px;
     line-height: 30px;
+    text-align: end;
   }
 
   .form-order__button {
@@ -104,23 +121,17 @@
   }
 
   .form-order__text {
+    width: 700px;
     padding-left: 225px;
     padding-right: 225px;
   }
 
-  .form-order__group--fio {
-    margin-bottom: 50px;
-  }
-
-  .form-order__group--contacts {
-    margin-bottom: 50px;
-  }
-
   .form-order__group--addition {
-    margin-bottom: 49px;
+    padding-bottom: 50px;
   }
 
   .form-order__wrapper-bottom {
+    width: 700px;
     padding-left: 225px;
     padding-right: 225px;
   }

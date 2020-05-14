@@ -1,11 +1,9 @@
 .reviews {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-top: 28px;
-  padding-left: 30px;
-  padding-right: 30px;
   padding-bottom: 50px;
-  border-bottom: 1px solid @grey;
 }
 
 .reviews__title {
@@ -34,6 +32,10 @@
   color: @darkGrey;
 }
 
+.reviews__text-br {
+  display: none;
+}
+
 .reviews__author {
   display: block;
   margin-bottom: 10px;
@@ -56,23 +58,51 @@
 
 .reviews__button {
   .reset();
+  display: flex;
+  justify-content: center;
   box-sizing: content-box;
   width: 128px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   background-color: @white;
   border: 1px solid @colorGreyDecorLine;
+  outline: none;
 }
 
-.reviews__prev {
+.reviews__button-icon {
+  width: 50px;
+  height: 26px;
+}
+
+.reviews__button:hover .reviews__button-icon {
+  polygon {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.reviews__button:focus .reviews__button-icon,
+.reviews__button:active .reviews__button-icon {
+  polygon {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.reviews__button--prev {
   border-right: none;
 }
+
+.reviews__decor-line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 6px;
+  width: 100%;
+}
+
 
 @media (min-width: @tablet-width) {
   .reviews {
     padding-top: 83px;
-    padding-left: 50px;
-    padding-right: 50px;
     padding-bottom: 137px;
     background: url("../img/review@1x.jpg") top left no-repeat;
   }
@@ -103,15 +133,29 @@
   }
 
   .reviews__buttons {
-    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    width: 136px;
+    padding-left: 11px;
+    padding-right: 19px;
     margin-top: -45px;
     margin-left: auto;
     margin-bottom: 0;
+  }
+
+  .reviews__button {
+    width: auto;
+    border: none;
+  }
+
+  .reviews__decor-line {
+    height: 17px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .reviews {
+    width: 875px;
     padding-top: 78px;
     padding-left: 225px;
     padding-bottom: 192px;
@@ -130,5 +174,13 @@
   .reviews__text {
     margin-bottom: 42px;
     padding-right: 105px;
+  }
+
+  .reviews__text-br {
+    display: block;
+  }
+
+  .reviews__decor-line {
+    height: 23px;
   }
 }
