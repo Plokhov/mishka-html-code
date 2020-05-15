@@ -12,11 +12,17 @@
 <body>
   <header class="page-header container">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image"
-        src="img/logo-mobile.svg"
-        width="86"
-        height="35"
-        alt="Магазин игрушек «Мишка»">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img
+          class="page-header__logo-image"
+          src="img/logo-mobile.svg"
+          width="86"
+          height="35"
+          alt="Магазин игрушек «Мишка»"
+        >
+      </picture>
     </a>
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <button class="main-nav__toggle" type="button">
@@ -453,7 +459,8 @@
     </div>
   </footer>
 
-  <script src="../js/script.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 
 </html>
