@@ -30,7 +30,8 @@
 }
 
 .site-list__link[href] {
-  &:hover {
+  &:hover,
+  &:focus {
     color: rgba(0, 0, 0, 0.6);
   }
 
@@ -41,50 +42,42 @@
 
 .site-list__link--search {
   position: relative;
+
+  &:hover .site-list__search-icon,
+  &:focus .site-list__search-icon {
+    fill: @turquoise;
+  }
+
+  &:active .site-list__search-icon {
+    opacity: 0.3;
+  }
 }
 
 .site-list__search-icon {
   position: absolute;
   top: 31px;
   left: 32px;
-  width: 18px;
-  height: 18px;
-
-  path {
-    fill: rgba(34, 31, 31, 0.2);
-  }
+  fill: rgba(34, 31, 31, 0.2);
 }
 
 .site-list__link--basket {
   position: relative;
+
+  &:hover .site-list__basket-icon,
+  &:focus .site-list__basket-icon {
+    fill: @turquoise;
+  }
+
+  &:active .site-list__basket-icon {
+    opacity: 0.3;
+  }
 }
 
 .site-list__basket-icon {
   position: absolute;
   left: 30px;
   top: 30px;
-  width: 21px;
-  height: 18px;
-
-  path {
-    fill: rgba(34, 31, 31, 0.2);
-  }
-}
-
-.site-list__link--search:hover .site-list__search-icon,
-.site-list__link--basket:hover .site-list__basket-icon {
-  path {
-    fill: @turquoise;
-  }
-}
-
-.site-list__link--search:active .site-list__search-icon,
-.site-list__link--search:focus .site-list__search-icon,
-.site-list__link--basket:active .site-list__basket-icon,
-.site-list__link--basket:focus .site-list__basket-icon {
-  path {
-    opacity: 0.3;
-  }
+  fill: rgba(34, 31, 31, 0.2);
 }
 
 @media (min-width: @tablet-width) {
