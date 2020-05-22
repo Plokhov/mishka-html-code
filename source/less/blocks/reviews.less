@@ -67,22 +67,13 @@
   background-color: @white;
   border: 1px solid @colorGreyDecorLine;
   outline: none;
-}
 
-.reviews__button-icon {
-  width: 50px;
-  height: 26px;
-}
-
-.reviews__button:hover .reviews__button-icon {
-  polygon {
+  &:hover .reviews__button-icon,
+  &:focus .reviews__button-icon {
     fill: rgba(0, 0, 0, 0.6);
   }
-}
 
-.reviews__button:focus .reviews__button-icon,
-.reviews__button:active .reviews__button-icon {
-  polygon {
+  &:active .reviews__button-icon {
     fill: rgba(0, 0, 0, 0.3);
   }
 }
