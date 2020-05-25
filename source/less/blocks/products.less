@@ -9,9 +9,9 @@
   width: 320px;
   min-height: 490px;
   margin: 0 auto;
-  margin-top: -165px;
+  margin-top: -160px;
   background-image: url("../../img/hero-mobile@1x.jpg");
-  background-position: center top;
+  background-position: center -17px;
   background-repeat: no-repeat;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -27,9 +27,9 @@
 .products__link {
   position: relative;
   display: block;
-  padding-top: 27px;
+  padding-top: 24px;
   padding-right: 130px;
-  padding-bottom: 28px;
+  padding-bottom: 31px;
   padding-left: 30px;
   width: 160px;
   font-size: 19px;
@@ -87,8 +87,8 @@
   .products__container {
     position: relative;
     width: 668px;
-    min-height: 745px;
-    margin-top: -260px;
+    min-height: 743px;
+    margin-top: -253px;
     background: url("../../img/hero-tablet@1x.jpg") center top no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -100,10 +100,11 @@
       content: "";
       position: absolute;
       left: -50px;
-      bottom: -10px;
-      width: 800px;
+      bottom: -14px;
+      width: 768px;
       height: 24px;
-      background: url("../img/bg-zigzag-fill.svg") repeat;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 768px 24px;
     }
   }
 
@@ -113,18 +114,19 @@
   }
 
   .products__link {
-    padding-top: 31px;
+    padding-top: 28px;
     padding-right: 138px;
     padding-left: 36px;
+    padding-bottom: 29px;
     font-size: 20px;
     line-height: 30px;
   }
 
-  .products__icon-decor {
+  .products__icon--decor {
     top: 30px;
   }
 
-  .products__icon-toys {
+  .products__icon--toys {
     top: 32px;
     right: 34px;
   }
@@ -133,7 +135,7 @@
 @media (min-width: @desktop-width) {
   .products__container {
     width: 1050px;
-    margin-top: -276px;
+    margin-top: -266px;
     background: url("../../img/hero-desktop@1x.jpg") center top no-repeat;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -142,7 +144,12 @@
     }
 
     &::after {
-      width: 1150px;
+      left: -35px;
+      bottom: -20px;
+      width: 1100px;
+      height: 34px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 1250px 34px;
     }
   }
 

@@ -2,13 +2,25 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-bottom: 50px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 320px;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: 320px 6px;
+    background-position: -8px 0px;
+  }
 }
 
 .reviews__title {
   .reset();
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -20,7 +32,7 @@
 
 .reviews__item {
   .reset();
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .reviews__text {
@@ -38,7 +50,7 @@
 
 .reviews__author {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 17px;
   font-weight: bold;
   font-style: normal;
@@ -90,10 +102,9 @@
   width: 100%;
 }
 
-
 @media (min-width: @tablet-width) {
   .reviews {
-    padding-top: 83px;
+    padding-top: 80px;
     padding-bottom: 137px;
     background-image: url("../../img/review@1x.jpg");
     background-position: top left;
@@ -103,9 +114,19 @@
       background-image: url("../../img/review@2x.jpg");
       background-size: 350px 457px;
     }
+
+    &:after {
+      bottom: -1px;
+      width: 768px;
+      height: 17px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-size: 768px 17px;
+      background-position: -19px 0px;
+    }
   }
 
   .reviews__title {
+    margin-top: -1px;
     margin-bottom: 0;
     font-size: 43px;
     line-height: 50px;
@@ -154,10 +175,20 @@
 @media (min-width: @desktop-width) {
   .reviews {
     width: 875px;
-    padding-top: 78px;
+    padding-top: 71px;
     padding-left: 225px;
     padding-bottom: 192px;
     background-position: left 50px top 0;
+
+    &:after {
+      bottom: 1px;
+      left: 48px;
+      width: 1050px;
+      height: 22px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-size: 1050px 23px;
+      background-position: -23px 0px;
+    }
   }
 
   .reviews__title {
@@ -166,7 +197,7 @@
   }
 
   .reviews__write {
-    margin-top: -55px;
+    margin-top: -48px;
   }
 
   .reviews__text {

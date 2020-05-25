@@ -1,12 +1,24 @@
 .promo {
   position: relative;
-  padding-top: 35px;
-  padding-bottom: 42px;
+  padding-top: 26px;
+  padding-bottom: 41px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 320px;
+    height: 6px;
+    background-image: url("../../img/bg-zigzag-line.svg");
+    background-size: 320px 6px;
+    background-position: -8px 0px;
+  }
 }
 
 .promo__title {
   .reset();
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   font-size: 25px;
   font-weight: bold;
   line-height: 30px;
@@ -14,7 +26,7 @@
 
 .promo__status {
   .reset();
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
@@ -24,7 +36,7 @@
 
 .promo__description {
   .reset();
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   font-size: 15px;
   font-weight: normal;
   line-height: 24px;
@@ -32,12 +44,12 @@
 }
 
 .promo__characteristics {
-  margin-bottom: 368px;
+  margin-bottom: 366px;
 }
 
 .promo__price {
   .reset();
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font-size: 17px;
   font-weight: bold;
   line-height: 24px;
@@ -54,15 +66,24 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
+  width: 320px;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
     display: flex;
     flex-direction: column;
-    padding-top: 53px;
+    padding-top: 46px;
     padding-bottom: 68px;
+
+    &:after {
+      bottom: -1px;
+      width: 768px;
+      height: 17px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-size: 768px 17px;
+      background-position: -19px 0px;
+    }
   }
 
   .promo__wrapper-title {
@@ -97,7 +118,7 @@
 
   .promo__description {
     margin-top: -7px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -130,11 +151,20 @@
   .promo {
     padding-top: 74px;
     padding-bottom: 96px;
+
+    &:after {
+      left: 48px;
+      width: 1050px;
+      height: 23px;
+      background-image: url("../../img/bg-zigzag-line.svg");
+      background-size: 1050px 23px;
+      background-position: -19px 0px;
+    }
   }
 
   .promo__wrapper-title {
     justify-content: start;
-    padding-top: 61px;
+    padding-top: 53px;
   }
 
   .promo__title {
@@ -146,13 +176,13 @@
   .promo__status {
     order: -1;
     width: 70px;
+    margin-bottom: 8px;
     padding-left: 47px;
     padding-right: 58px;
-    margin: 0;
   }
 
   .promo__wrapper {
-    margin-top: -117px;
+    margin-top: -110px;
     padding-top: 0;
   }
 
@@ -168,6 +198,10 @@
 
   .promo__characteristics {
     margin-bottom: 110px;
+  }
+
+  .promo__price {
+    margin-bottom: 34px;
   }
 
   .promo__image {

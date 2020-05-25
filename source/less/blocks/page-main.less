@@ -1,7 +1,7 @@
 .page-main__title {
   .reset();
   position: relative;
-  margin-top: 75px;
+  margin-top: 70px;
   font-size: 27px;
   font-weight: bold;
   line-height: 30px;
@@ -12,8 +12,8 @@
 .page-main__title--catalog,
 .page-main__title--form {
   display: block;
-  padding-top: 74px;
-  padding-bottom: 74px;
+  padding-top: 70px;
+  padding-bottom: 76px;
   margin-top: 0;
   background-color: @grey;
 }
@@ -25,7 +25,7 @@
   }
 
   .page-main__title {
-    margin-top: 160px;
+    margin-top: 153px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -34,23 +34,25 @@
   .page-main__title--form {
     position: relative;
     margin-top: 0;
-    padding-top: 102px;
+    padding-top: 95px;
+    padding-bottom: 77px;
 
     &::after {
       content: "";
       position: absolute;
-      left: 0;
-      bottom: -10px;
-      width: 100%;
+      left: 50%;
+      bottom: -14px;
+      width: 768px;
       height: 24px;
-      background: url("../img/bg-zigzag-fill.svg") repeat;
+      margin-left: -384px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 768px 24px;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-main__title {
-    margin-top: 162px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -58,6 +60,17 @@
   .page-main__title--catalog,
   .page-main__title--form {
     margin-top: 0;
-    padding-bottom: 94px;
+    padding-top: 92px;
+    padding-bottom: 102px;
+
+    &::after {
+      left: 50%;
+      bottom: -20px;
+      width: 1150px;
+      height: 34px;
+      margin-left: -575px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: 1150px 34px;
+    }
   }
 }

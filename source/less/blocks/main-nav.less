@@ -1,15 +1,13 @@
 .main-nav {
   position: relative;
   padding-top: 78px;
-  border-top: 1px solid @colorGreyDecorLine;
-  border-bottom: 1px solid @colorGreyDecorLine;
 }
 
 .main-nav__toggle {
   .reset();
   position: absolute;
   top: 23px;
-  right: 0;
+  right: 30px;
   display: block;
   width: 30px;
   height: 30px;
@@ -22,7 +20,7 @@
   content: "";
   position: absolute;
   top: 8px;
-  right: 1px;
+  right: 0;
   width: 20px;
   height: 14px;
   background: url("../img/icon-menu-open.svg") 0 0 no-repeat;
@@ -63,6 +61,8 @@
 @media (min-width: @tablet-width) {
   .main-nav {
     padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
     border-bottom: none;
   }
 
