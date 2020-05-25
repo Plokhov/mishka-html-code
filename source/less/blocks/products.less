@@ -1,13 +1,14 @@
 .products {
-  background-color: rgba(249, 249, 249);
+  display: block;
+  background-color: rgb(249, 249, 249);
 }
 
 .products__container {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column-reverse;
   width: 320px;
-  min-height: 490px;
+  // Высота для IE11
+  height: 490px;
   margin: 0 auto;
   margin-top: -160px;
   background-image: url("../../img/hero-mobile@1x.jpg");
@@ -144,12 +145,13 @@
     }
 
     &::after {
-      left: -35px;
+      left: 50%;
       bottom: -20px;
-      width: 1100px;
+      width: 1150px;
       height: 34px;
+      margin-left: -575px;
       background-image: url("../img/bg-zigzag-fill.svg");
-      background-size: 1250px 34px;
+      background-size: 1150px 34px;
     }
   }
 
