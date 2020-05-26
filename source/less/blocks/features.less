@@ -17,10 +17,23 @@
 .features__item {
   position: relative;
   padding-top: 55px;
+  padding-right: 45px;
   margin-bottom: 28px;
   font-size: 17px;
   font-weight: bold;
   line-height: 20px;
+}
+
+.features__item--ecology {
+  padding-right: 80px;
+}
+
+.features__item--like {
+  padding-right: 75px;
+}
+
+.features__item--maker {
+  padding-right: 0;
 }
 
 .features__icon-ecology {
@@ -94,6 +107,18 @@
       margin-bottom: 0;
     }
   }
+
+  .features__item--ecology {
+    padding-right: 105px;
+  }
+
+  .features__item--price {
+    padding-right: 85px;
+  }
+
+  .features__item--like {
+    padding-right: 95px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -112,5 +137,25 @@
 
   .features__list {
     width: 350px;
+  }
+
+  .features__item {
+    padding-right: 50px;
+  }
+
+  .features__item--ecology {
+    padding-right: 145px;
+  }
+
+  .features__item--price {
+    padding-right: 90px;
+  }
+
+  .features__item--like {
+    padding-right: 125px;
+  }
+
+  .features__item--gift {
+    padding-right: 80px;
   }
 }

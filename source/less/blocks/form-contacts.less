@@ -1,5 +1,13 @@
 .form-contacts__label {
+  .reset();
+  display: block;
+  width: 260px;
   margin-bottom: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @turquoise;
 }
 
 .form-contacts__wrapper {
@@ -8,9 +16,39 @@
 }
 
 .form-contacts__input {
+  .reset();
   position: relative;
-  margin-bottom: 0;
   z-index: 2;
+  box-sizing: border-box;
+  height: 52px;
+  width: 260px;
+  padding-top: 17px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 18px;
+  color: @darkGrey;
+  background-color: transparent;
+  border-bottom: 2px solid @black;
+  outline: none;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::placeholder {
+    color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:hover {
+    border-color: @turquoise;
+  }
+
+  &:focus,
+  &:active {
+    border-color: @turquoise;
+  }
 
   &:hover + .form-contacts__input-icon,
   &:focus + .form-contacts__input-icon,
@@ -40,6 +78,7 @@
 
   .form-contacts__label {
     width: 167px;
+    margin-top: 17px;
     margin-bottom: 0;
   }
 
@@ -52,7 +91,10 @@
   }
 
   .form-contacts__input {
+    flex-grow: 1;
     width: 500px;
+    padding-left: 18px;
+    font-size: 19px;
   }
 
   .form-contacts__input-icon {
@@ -73,6 +115,7 @@
 
   .form-contacts__label {
     width: 113px;
+    padding-left: 62px;
   }
 
   .form-contacts__input {
