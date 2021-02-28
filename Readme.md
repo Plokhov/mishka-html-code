@@ -1,6 +1,25 @@
 # «Магазин Мишка»(html-code)
 
-<img width="450" alt="index" src="https://a.radikal.ru/a14/2102/96/1083bfecf41b.png">
+### Главная страница(index.html)
+<p>
+  <img width="400" alt="index" src="https://c.radikal.ru/c11/2102/28/7ce5841e418a.png">&nbsp;&nbsp;
+  <img width="200" alt="index" height="1260" src="https://d.radikal.ru/d04/2102/f7/c2f434677649.png">&nbsp;&nbsp;
+  <img width="100" alt="index" height="1260" src="https://d.radikal.ru/d35/2102/72/f15a23188526.png">
+<p><br>
+
+### Страница каталога(catalog.html)
+<p>
+  <img width="400" alt="index" src="https://c.radikal.ru/c11/2102/71/d35725000802.png">&nbsp;&nbsp;
+  <img width="200" alt="index" height="657" src="https://b.radikal.ru/b17/2102/63/7dddc9f39b24.png">&nbsp;&nbsp;
+  <img width="100" alt="index" height="657" src="https://b.radikal.ru/b07/2102/5c/5f2747a560d2.png">
+<p><br>
+  
+### Страница формы заказа(form.html)
+<p>
+  <img width="400" alt="index" src="https://c.radikal.ru/c33/2102/61/77b0b8024497.png">&nbsp;&nbsp;
+  <img width="200" alt="index" height="697" src="https://d.radikal.ru/d19/2102/a3/2312ed926789.png">&nbsp;&nbsp;
+  <img width="100" alt="index" height="697" src="https://d.radikal.ru/d42/2102/c9/428133a9f2b6.png">
+<p><br>
 
 ## Техническое задание
 
